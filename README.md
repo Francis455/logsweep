@@ -1,4 +1,4 @@
-# LogSweep
+ LogSweep
 
 LogSweep is a simple command-line tool written in Rust for cleaning and searching log files.  
 It helps developers quickly extract useful information from logs directly in the terminal.
@@ -7,7 +7,7 @@ This project was developed as part of a university course and focuses on Text Ed
 
 ---
 
-## 🚀 Features
+ Features
 
 - Remove empty lines from log files
 - Filter and display only error messages
@@ -18,7 +18,7 @@ This project was developed as part of a university course and focuses on Text Ed
 
 ---
 
-## 🛠 Technologies Used
+ Technologies Used
 
 - Rust
 - Cargo (Rust package manager)
@@ -26,18 +26,18 @@ This project was developed as part of a university course and focuses on Text Ed
 
 ---
 
-## 📦 Installation
+ Installation
 
-### Requirements
+Requirements
 - Rust installed (rustup recommended)
 
-### Clone the repository
+Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/logsweep.git
 cd logsweep
 Build the project
 cargo build
-▶️ Usage
+ Usage
 General command format:
 
 cargo run <command> <file> [options]
@@ -64,7 +64,7 @@ Save output to a file
 cargo run clean app.log --errors --output clean.log
 This creates a new file called clean.log with the filtered content.
 
-🧠 How It Works
+ How It Works
 Reads a log file using Rust’s file system utilities
 
 Processes the file line by line
@@ -75,7 +75,7 @@ Applies simple text filtering and searching logic
 
 Can save filtered results to a new file if --output is used
 
-📁 Project Structure
+ Project Structure
 logsweep/
 ├── src/
 │   └── main.rs
@@ -84,7 +84,7 @@ logsweep/
 ├── README.md
 ├── app.log
 └── clean.log
-🌍 GitHub Pages Website
+ GitHub Pages Website
 This project can be presented with a simple website deployed using GitHub Pages, which:
 
 Explains what LogSweep does
@@ -93,7 +93,7 @@ Shows example commands
 
 Links to the GitHub repository for download
 
-🎓 Course Relevance
+ Course Relevance
 This project demonstrates:
 
 Command-line program development
@@ -102,9 +102,9 @@ Text editing and filtering workflows
 
 Practical use of Rust for developer tools
 
-👤 Author
+ Author
 Francis Ntim
 Rust CLI Project – University Submission
 
-📜 License
+ License
 This project is for educational purposes only and a University Examination 
