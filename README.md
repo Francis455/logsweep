@@ -107,4 +107,4 @@ Francis Ntim
 Rust CLI Project – University Submission
 
 📜 License
-This project is for educational purposes only.
+This project is for educational purposes only and a University Examination 
