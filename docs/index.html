@@ -23,7 +23,7 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        h1 {
+        h1, h2 {
             margin-bottom: 10px;
         }
         p {
@@ -53,6 +53,18 @@
         .button:hover {
             background: #2980b9;
         }
+        .demo {
+            background: #eaeaea;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        .cleaned {
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -76,11 +88,28 @@
             <li>Fast and efficient Rust performance</li>
         </ul>
 
+        <h2>Demo Log Cleaning</h2>
+        <div class="demo" id="demoLog">
+log1.txt: ERROR found
+log2.txt: INFO
+log3.txt: WARNING
+log4.txt: ERROR found
+        </div>
+        <button class="button" onclick="cleanLogs()">Clean Logs</button>
+
         <a href="https://github.com/Francis455/logsweep" class="button">View on GitHub</a>
     </main>
 
     <footer>
         &copy; 2026 Francis Ntim. All Rights Reserved.
     </footer>
+
+    <script>
+        function cleanLogs() {
+            const demo = document.getElementById('demoLog');
+            demo.innerHTML = demo.innerHTML
+                .replace(/ERROR found/g, '<span class="cleaned">CLEANED</span>');
+        }
+    </script>
 </body>
 </html>
