@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LogSweep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogSweep - Rust CLI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to LogSweep</h1>
-  <p>Download and use the CLI tool via GitHub.</p>
+    <header>
+        <h1>LogSweep</h1>
+        <p>A Rust CLI Tool for Cleaning Log Files</p>
+    </header>
+
+    <main>
+        <h2>About LogSweep</h2>
+        <p>LogSweep is a command-line tool built in Rust to help you clean and manage log files efficiently. It supports automatic cleaning and archiving of logs.</p>
+
+        <h2>How to Use</h2>
+        <p>Open a terminal and run:</p>
+        <pre><code>cargo run -- [options] log_file.log</code></pre>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Automatic cleaning of log files</li>
+            <li>Archiving old logs</li>
+            <li>Fast and efficient Rust performance</li>
+        </ul>
+
+        <a href="https://github.com/Francis455/logsweep" class="button">View on GitHub</a>
+    </main>
+
+    <footer>
+        &copy; 2026 Francis Ntim. All Rights Reserved.
+    </footer>
 </body>
 </html>
