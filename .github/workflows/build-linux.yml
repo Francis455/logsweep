@@ -37,7 +37,7 @@ jobs:
 
       # Step 5: Upload the compiled binary as artifact
       - name: Upload Linux binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: logsweep-linux
           path: target/x86_64-unknown-linux-musl/release/logsweep
