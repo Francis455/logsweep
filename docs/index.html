@@ -1,115 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogSweep - Rust CLI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h1, h2 {
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        code {
-            background: #eaeaea;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 40px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background: #2980b9;
-        }
-        .demo {
-            background: #eaeaea;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 5px;
-            font-family: monospace;
-            white-space: pre;
-            overflow-x: auto;
-        }
-        .cleaned {
-            color: green;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>LogSweep CLI Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .download {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>LogSweep</h1>
-        <p>A Rust CLI Tool for Cleaning Log Files</p>
-    </header>
 
-    <main>
-        <h2>About LogSweep</h2>
-        <p>LogSweep is a command-line tool built in Rust to help you clean and manage log files efficiently. It supports automatic cleaning and archiving of logs.</p>
+  <h1>LogSweep CLI Tool</h1>
 
-        <h2>How to Use</h2>
-        <p>Open a terminal and run:</p>
-        <pre><code>cargo run -- [options] log_file.log</code></pre>
+  <div class="section">
+    <h2>The Problem</h2>
+    <p>
+      Log files grow quickly and become difficult to manage. Developers and system administrators
+      often waste time manually reviewing large logs to find warnings or errors.
+      This slows debugging and reduces productivity.
+    </p>
+  </div>
 
-        <h2>Features</h2>
-        <ul>
-            <li>Automatic cleaning of log files</li>
-            <li>Archiving old logs</li>
-            <li>Fast and efficient Rust performance</li>
-        </ul>
+  <div class="section">
+    <h2>The Solution</h2>
+    <p>
+      LogSweep is a fast and lightweight Rust-based command-line tool that automates
+      log file cleaning and warning detection.
+      It scans log files, extracts relevant information, and writes cleaned output
+      into a separate file for easier analysis.
+    </p>
+  </div>
 
-        <h2>Demo Log Cleaning</h2>
-        <div class="demo" id="demoLog">
-log1.txt: ERROR found
-log2.txt: INFO
-log3.txt: WARNING
-log4.txt: ERROR found
-        </div>
-        <button class="button" onclick="cleanLogs()">Clean Logs</button>
+  <div class="section">
+    <h2>How It Works</h2>
+    <ul>
+      <li>Reads a log file</li>
+      <li>Detects warning or error messages</li>
+      <li>Writes filtered results to a clean output file</li>
+      <li>Runs efficiently using Rust performance advantages</li>
+    </ul>
+  </div>
 
-        <a href="https://github.com/Francis455/logsweep" class="button">View on GitHub</a>
-    </main>
+  <div class="section">
+    <h2>Target Users</h2>
+    <ul>
+      <li>Software developers</li>
+      <li>System administrators</li>
+      <li>DevOps engineers</li>
+      <li>IT students learning log analysis</li>
+    </ul>
+  </div>
 
-    <footer>
-        &copy; 2026 Francis Ntim. All Rights Reserved.
-    </footer>
+  <div class="section">
+    <h2>Business Model</h2>
+    <p>
+      LogSweep follows a freemium model:
+    </p>
+    <ul>
+      <li>Free basic version for students and developers</li>
+      <li>Premium version with advanced filtering and analytics</li>
+      <li>Enterprise subscription for automated server monitoring</li>
+    </ul>
+  </div>
 
-    <script>
-        function cleanLogs() {
-            const demo = document.getElementById('demoLog');
-            demo.innerHTML = demo.innerHTML
-                .replace(/ERROR found/g, '<span class="cleaned">CLEANED</span>');
-        }
-    </script>
+  <div class="section">
+    <h2>Download</h2>
+    <p>
+      Download the Linux aarch64 binary below:
+    </p>
+
+    <!-- REPLACE THIS LINK AFTER RELEASE IS CREATED -->
+    <a class="download" href="#">
+      Download LogSweep (Linux aarch64)
+    </a>
+  </div>
+
 </body>
 </html>
