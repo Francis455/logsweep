@@ -1,6 +1,10 @@
 [package]
-name = "logsweep"
+name = "comm"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+
+[[bin]]
+name = "comm"
+path = "src/main.rs"
