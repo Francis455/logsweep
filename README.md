@@ -33,7 +33,7 @@ Requirements
 
 Clone the repository
 `bash
-git clone https://github.com/YOUR_USERNAME/logsweep.git
+git clone https://github.com/francis455/logsweep.git
 cd logsweep
 Build the project
 cargo build
